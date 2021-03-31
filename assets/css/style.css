@@ -1,0 +1,155 @@
+:root {
+    --primary: rgb(124, 7, 170);
+    --secondary: rgb(173, 255, 47);
+    --primary2: rgb(112, 16, 16);
+    --primary3: #F51720;
+    --primary4: #122620;
+    --primary5: #211522;
+    --primary6: #3CACAE;
+    --primary7: #07040A;
+    --primary8: #52584D;
+    --primary9: #3B707D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: square;
+    list-style: none;
+}
+
+body {
+    background-color: var(--primary);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.colors {
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin: 4px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.colors:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 5px solid var(--secondary);
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 20px;
+}
+
+.div-content,
+.div-inputs,
+.titulo {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo {
+    margin: 10px;
+    font-size: 42px;
+}
+
+.list {
+    width: 50%;
+    margin: 20px auto;
+}
+
+.list li {
+    font-size: 22px;
+    margin: 30px auto;
+    padding: 10px 0;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.remover,
+.add {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 8px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.remover:hover,
+.add:hover {
+    color: orangered;
+}
+
+.input {
+    width: 280px;
+}
+
+.padrao {
+    background-color: var(--primary);
+}
+
+.p2 {
+    background-color: var(--primary2);
+}
+
+.p3 {
+    background-color: var(--primary3);
+}
+
+.p4 {
+    background-color: var(--primary4);
+}
+
+.p5 {
+    background-color: var(--primary5);
+}
+
+.p6 {
+    background-color: var(--primary6);
+}
+
+.p7 {
+    background-color: var(--primary7);
+}
+
+.p8 {
+    background-color: var(--primary8);
+}
+
+.p9 {
+    background-color: var(--primary9);
+}
+
+.random {
+    background-color: white;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
