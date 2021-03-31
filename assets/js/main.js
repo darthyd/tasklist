@@ -1,3 +1,5 @@
+// implementar cache das cores
+// solucionar mensagens do console sobre os arquivos não encontrados em cache
 const container = document.querySelector(".container");
 const form = document.querySelector(".div-inputs");
 const input = document.querySelector(".input");
@@ -89,11 +91,16 @@ function changeColors(x, y = false) {
     if (y === true) {
         randBtn.style.backgroundColor = x;
     };
-    const remove = document.querySelector(".remover");
+    const remove = document.querySelectorAll(".remover");
     document.body.style.backgroundColor = x[0];
     container.style.border = `5px solid ${x[1]}`;
     btn.style.backgroundColor = x[1];
-    remove.style.backgroundColor = x[1];
+    //remove.style.backgroundColor = x[1];
+    for (b of remove) {
+        console.log(b)
+        b.style.backgroundColor = x[1];
+    }
+    //console.log(remove);
 }
 
 function randomizer(twoColors = false) {
